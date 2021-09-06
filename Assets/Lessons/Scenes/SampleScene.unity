@@ -226,6 +226,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1170155076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 464148683023046656, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
+  m_PrefabInstance: {fileID: 464148682637932594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1396273500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 464148683930208622, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
@@ -250,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1396273503}
   _inputData: {fileID: 11400000, guid: d7b792ab653e50541a60c856603acf59, type: 2}
+  _targetTransform: {fileID: 1396273506}
   _playerMovementSettings: {fileID: 11400000, guid: a436018fc25f05740b154df4eb7d050d, type: 2}
 --- !u!114 &1396273505
 MonoBehaviour:
@@ -266,6 +272,11 @@ MonoBehaviour:
   _rotationInput: {fileID: 11400000, guid: 2a32c58ed1c72e24599b1a95f9a53ca4, type: 2}
   _towerTransform: {fileID: 185630703}
   _towerRotationSettings: {fileID: 11400000, guid: 5d0fa820ad2b0f04f99279bf9571722f, type: 2}
+--- !u!4 &1396273506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 464148683930208623, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
+  m_PrefabInstance: {fileID: 464148682637932594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1485088486
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +287,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1485088487}
   - component: {fileID: 1485088489}
-  - component: {fileID: 1485088488}
   m_Layer: 0
   m_Name: Environment Camera
   m_TagString: Untagged
@@ -298,14 +308,6 @@ Transform:
   m_Father: {fileID: 499666786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1485088488
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485088486}
-  m_Enabled: 1
 --- !u!20 &1485088489
 Camera:
   m_ObjectHideFlags: 0
@@ -567,7 +569,12 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8836512908033446525, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
+      propertyPath: _targetTransform
+      value: 
+      objectReference: {fileID: 1170155076}
+    m_RemovedComponents:
+    - {fileID: 1396273504, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
 --- !u!1001 &2081848986425988800
 PrefabInstance:
