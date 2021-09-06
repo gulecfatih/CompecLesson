@@ -570,6 +570,14 @@ PrefabInstance:
       value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 8836512908033446525, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
+      propertyPath: _positionTarget
+      value: 
+      objectReference: {fileID: 1396273506}
+    - target: {fileID: 8836512908033446525, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
+      propertyPath: _rotationTarget
+      value: 
+      objectReference: {fileID: 1170155076}
+    - target: {fileID: 8836512908033446525, guid: 0970b5730b37c3244bd743f7c94c015c, type: 3}
       propertyPath: _targetTransform
       value: 
       objectReference: {fileID: 1170155076}

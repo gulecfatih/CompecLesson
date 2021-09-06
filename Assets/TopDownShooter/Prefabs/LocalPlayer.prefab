@@ -572,7 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraSettings: {fileID: 11400000, guid: 64c6d68f7526cea4eb306bc0bd393d41, type: 2}
-  _targetTransform: {fileID: 464148683462765695}
+  _rotationTarget: {fileID: 0}
+  _positionTarget: {fileID: 0}
   _cameraTransform: {fileID: 464148683566372166}
 --- !u!114 &1396273504
 MonoBehaviour:
@@ -588,6 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2521470705129473095}
   _inputData: {fileID: 11400000, guid: d7b792ab653e50541a60c856603acf59, type: 2}
+  _targetTransform: {fileID: 0}
   _playerMovementSettings: {fileID: 11400000, guid: a436018fc25f05740b154df4eb7d050d, type: 2}
 --- !u!1 &464148684457898779
 GameObject:
